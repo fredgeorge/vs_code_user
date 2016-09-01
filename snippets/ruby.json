@@ -1,0 +1,97 @@
+// Ruby snippets, inspired by similar TextMate ones
+// Author: Fred George fredgeorge@acm.org
+
+// For Mac OS/X, this file goes:
+//   $HOME/Library/Application Support/Code/User/snippets/(language).json
+// For Windows, this file goes:
+//   %APPDATA%\Code\User\snippets\(language).json
+
+{
+	"Class": {
+		"prefix": "cla",
+		"body": [
+			"# Copyright 2016 by Fred George.",
+			"# May be copied with this notice, but not used in classroom training.",
+			"",
+			"# Understands ${class_job:SOMETHING_DUMMY}",
+			"class ${class_name:Class Name}",
+			"",
+			"  def initialize($1)",
+			"    $0",
+			"  end",
+			"",
+			"end",
+			""
+		],
+		"description": "Class with init - FDG"
+	},
+
+	"Test class": {
+		"prefix": "tc",
+		"body": [
+			"# Copyright 2016 by Fred George.",
+			"# May be copied with this notice, but not used in classroom training.",
+			"",
+			"require 'minitest/autorun'",
+			"",
+			"# Ensures ${class_name:Class Name Being Tested} operates correctly",
+			"class ${class_name}Test < Minitest::Test",
+			"",
+			"  def test_${first_test_name: First Test Name}",
+			"    $0",
+			"  end",
+			"",
+			"end",
+			""
+		],
+		"description": "Test class - FDG"
+	},
+
+	"Method (instance)": {
+		"prefix": "defi",
+		"body": [
+			"def ${method_name: Method Name }(${1:args})",
+			"  $0",
+			"end"
+		],
+		"description": "Method (instance) - FDG"
+	},
+
+	"Method (class/static)": {
+		"prefix": "defs",
+		"body": [
+			"def self.${method_name: Method Name}(${1:args})",
+			"  $0",
+			"end"
+		],
+		"description": "Method (class/static) - FDG"
+	},
+
+	"Test method": {
+		"prefix": "deft",
+		"body": [
+			"def test_${test_name: Test Name}",
+			"  $0",
+			"end"
+		],
+		"description": "Test method - FDG"
+	},
+
+	"Reader-Protected": {
+		"prefix": "rp",
+		"body": [
+			"attr_reader :${var: instance_variable}",
+			"protected :${var}",
+			"$0"
+		],
+		"description": "Attribute reader & protected"
+	},
+
+	"Require relative": {
+		"prefix": "rr",
+		"body": [
+			"require_relative '$0'"
+		],
+		"description": "require_relative..."
+	}
+}
