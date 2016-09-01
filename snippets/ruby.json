@@ -93,5 +93,37 @@
 			"require_relative '$0'"
 		],
 		"description": "require_relative..."
+	},
+
+	"Assert Equal": {
+		"prefix": "ase",
+		"body": [
+			"assert_equal(${expected}, ${0:actual})"
+		],
+		"description": "assert_equal()"
+	},
+
+	"Refule Equal": {
+		"prefix": "rfe",
+		"body": [
+			"refute_equal(${expected}, ${0:actual})"
+		],
+		"description": "refute_equal()"
+	},
+
+	"Assert Not Equal": {
+		"prefix": "asne",
+		"body": [
+			"refute_equal(${expected}, ${0:actual})"
+		],
+		"description": "refute_equal()"
+	},
+
+	"Assert Raises": {
+		"prefix": "asr",
+		"body": [
+			"assert_raises(${exception:exception_class}) { ${0:body_to_raise_exception} }"
+		],
+		"description": "assert_raises()"
 	}
 }
