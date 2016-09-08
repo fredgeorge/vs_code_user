@@ -98,7 +98,7 @@
 	"Assert Equal": {
 		"prefix": "ase",
 		"body": [
-			"assert_equal(${expected}, ${0:actual})"
+			"assert_equal(${expected}, ${actual})$0"
 		],
 		"description": "assert_equal()"
 	},
@@ -106,7 +106,7 @@
 	"Refule Equal": {
 		"prefix": "rfe",
 		"body": [
-			"refute_equal(${expected}, ${0:actual})"
+			"refute_equal(${expected}, ${actual})$0"
 		],
 		"description": "refute_equal()"
 	},
@@ -114,7 +114,7 @@
 	"Assert Not Equal": {
 		"prefix": "asne",
 		"body": [
-			"refute_equal(${expected}, ${0:actual})"
+			"refute_equal(${expected}, ${actual})$0"
 		],
 		"description": "refute_equal()"
 	},
@@ -122,7 +122,7 @@
 	"Assert Raises": {
 		"prefix": "asr",
 		"body": [
-			"assert_raises(${exception:exception_class}) { ${0:body_to_raise_exception} }"
+			"assert_raises(${exception_class}) { ${body_to_raise_exception} }$0"
 		],
 		"description": "assert_raises()"
 	}
