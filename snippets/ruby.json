@@ -103,7 +103,31 @@
 		"description": "assert_equal()"
 	},
 
-	"Refule Equal": {
+	"Assert True": {
+		"prefix": "ast",
+		"body": [
+			"assert(${expression})$0"
+		],
+		"description": "assert()"
+	},
+
+	"Assert False": {
+		"prefix": "asf",
+		"body": [
+			"refute(${expression})$0"
+		],
+		"description": "refute()"
+	},
+
+	"Refute True": {
+		"prefix": "rft",
+		"body": [
+			"refute(${expression})$0"
+		],
+		"description": "refute()"
+	},
+
+	"Refute Equal": {
 		"prefix": "rfe",
 		"body": [
 			"refute_equal(${expected}, ${actual})$0"
