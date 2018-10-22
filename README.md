@@ -8,4 +8,6 @@ For Windows, these files go:
 - %APPDATA%\Code\User\   
 
 To clone to a new machine, you don't want to create a new directory:
-- git clone --bare <this_repository_url> .
+- git init
+- git remote add origin <this_repository_url>
+- git fetch

@@ -12,6 +12,8 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+
+	// Installed via GitHub repository vs_code_user
 	"Class": {
 		"prefix": "cla",
 		"body": [
