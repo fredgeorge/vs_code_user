@@ -28,6 +28,7 @@
 // External Terminal
 
     // Customizes which terminal to run on Windows.
-    "terminal.external.windowsExec": "powershell"
-
+    "terminal.external.windowsExec": "powershell",
+    "team.showWelcomeMessage": false,
+    "java.errors.incompleteClasspath.severity": "ignore"
 }
