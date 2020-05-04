@@ -29,6 +29,9 @@
     //  - ui: Use the settings UI editor.
     //  - json: Use the JSON file editor.
       "workbench.settings.editor": "json",
+
+    // Set to use zsh by default
+      "terminal.integrated.automationShell.osx": "zsh",
     
 // External Terminal
 
